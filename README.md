@@ -18,7 +18,7 @@ Welcome to the **SQL Practice Repository**! This collection contains **SQL probl
 ├── HackerRank/
 │   ├──.SQL file with code and Approach
 │   └── ...
-├── Company_Questions/
+├── SQL Interview Problems/
 │   └── .SQL file with Questions for different levels, their solution code, and Approach
 └── README.md
 ```
