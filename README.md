@@ -47,7 +47,7 @@ Each folder contains well-commented `.sql` files with:
 You can clone this repo and open the SQL files using any code editor or your preferred SQL IDE.
 
 ```bash
-git clone [https://github.com/yourusername/sql-practice-solutions.git](https://github.com/jadonsooraj/SQL_Problems.git)
+git clone https://github.com/jadonsooraj/SQL_Problems.git
 ```
 
 You can run the SQL snippets on platforms like:
