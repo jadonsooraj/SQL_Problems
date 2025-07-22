@@ -13,38 +13,33 @@ Welcome to the **SQL Practice Repository**! This collection contains **SQL probl
 ```plaintext
 .
 ├── LeetCode/
-│   ├── 001_Easy_Problem_Name.sql
+│   ├── .SQL file with code and Approach
 │   └── ...
 ├── HackerRank/
-│   ├── 001_Basic_Select.sql
-│   └── ...
-├── StrataScratch/
-│   └── ...
-├── DataLemur/
+│   ├──.SQL file with code and Approach
 │   └── ...
 ├── Company_Questions/
-│   └── ...
+│   └── .SQL file with Questions for different levels and their solution code and Approach
 └── README.md
 ```
 
 Each folder contains well-commented `.sql` files with:
-- Problem name and platform
-- Problem description (brief or link)
-- SQL solution
+- Problem name
+- SQL solution with approach used
 
 ---
 
-## 🧠 Topics Covered
-
-✅ Joins  
-✅ Subqueries  
-✅ Window Functions  
-✅ Aggregations  
-✅ CTEs (Common Table Expressions)  
-✅ Filtering and Sorting  
-✅ Grouping  
-✅ Date Functions  
-✅ Ranking and Analytics Functions
+##  Topics Covered
+- Basic and Advanced SELECT
+- Joins  
+- Subqueries  
+- Window Functions  
+- Aggregations  
+- CTEs (Common Table Expressions)  
+- Filtering and Sorting  
+- Grouping  
+- Date Functions  
+- Ranking and Analytics Functions
 
 ---
 
@@ -52,7 +47,7 @@ Each folder contains well-commented `.sql` files with:
 You can clone this repo and open the SQL files using any code editor or your preferred SQL IDE.
 
 ```bash
-git clone https://github.com/yourusername/sql-practice-solutions.git
+git clone [https://github.com/yourusername/sql-practice-solutions.git](https://github.com/jadonsooraj/SQL_Problems.git)
 cd sql-practice-solutions
 ```
 
@@ -63,7 +58,7 @@ You can run the SQL snippets on platforms like:
 
 ---
 
-## ✍️ Contribution
+## Contribution
 
 Want to contribute? Feel free to:
 - Add new problems and solutions
@@ -72,7 +67,7 @@ Want to contribute? Feel free to:
 
 ---
 
-## 📌 Disclaimer
+##  Disclaimer
 
 All problems are publicly available and belong to their respective platforms. This repository is maintained for educational and self-practice purposes only.
 
