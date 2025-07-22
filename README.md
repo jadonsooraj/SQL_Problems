@@ -19,7 +19,7 @@ Welcome to the **SQL Practice Repository**! This collection contains **SQL probl
 │   ├──.SQL file with code and Approach
 │   └── ...
 ├── Company_Questions/
-│   └── .SQL file with Questions for different levels and their solution code and Approach
+│   └── .SQL file with Questions for different levels, their solution code, and Approach
 └── README.md
 ```
 
@@ -48,7 +48,6 @@ You can clone this repo and open the SQL files using any code editor or your pre
 
 ```bash
 git clone [https://github.com/yourusername/sql-practice-solutions.git](https://github.com/jadonsooraj/SQL_Problems.git)
-cd sql-practice-solutions
 ```
 
 You can run the SQL snippets on platforms like:
