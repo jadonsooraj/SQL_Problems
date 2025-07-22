@@ -4,9 +4,7 @@ Welcome to the **SQL Practice Repository**! This collection contains **SQL probl
 
 - [LeetCode](https://leetcode.com)
 - [HackerRank](https://www.hackerrank.com)
-- [StrataScratch](https://www.stratascratch.com) *(optional)*
-- [DataLemur](https://datalemur.com) *(optional)*
-- Custom/Company-Specific Problems *(if applicable)*
+- Custom Practice Questions from different sources
 
 ---
 
@@ -50,7 +48,6 @@ Each folder contains well-commented `.sql` files with:
 
 ---
 
-## 🚀 How to Use
 
 You can clone this repo and open the SQL files using any code editor or your preferred SQL IDE.
 
@@ -83,4 +80,4 @@ All problems are publicly available and belong to their respective platforms. Th
 
 ## 📬 Contact
 
-If you have questions or suggestions, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/yourprofile) or open an issue in this repository.
+If you have questions or suggestions, feel free to reach out via [LinkedIn]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/sooraj-jadon-94a9b3120/)) or open an issue in this repository.
