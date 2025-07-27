@@ -1,0 +1,27 @@
+1280. Students and Examination
+
+--tables:
+1. students: student_id, student_name
+2. subjects: subject_name
+3. examinations: student_id, subject_name
+
+--output: student_id,student_name,student_name,attended_exams
+
+
+--conditions
+1. find number of times each student attended each subject exam, if didn't took then 0
+2. order by student_id,student_name
+
+CODE:
+
+SELECT
+    s.student_id,
+    s.student_name,
+    sub.subject_name,
+    count(e.student_id) as attended_exams
+FROM students s
+cross JOIN subjects sub
+LEFT JOIN examinations e
+ON s.student_id = e.student_id and sub.subject_name=e.subject_name
+group by 1,2,3
+order by 1,2,3
