@@ -1,0 +1,26 @@
+--1204. Last Person to fit in the bus
+
+--Table:
+1. Queue: person_id, person_name, weight, turn
+
+--Conditions:
+1. There's a queue of people to board a bus which has a limit of 1000Kg.
+2. Write a query to find the name of the last person to board the bus.
+
+--Output: person_name
+
+--CODE:
+
+with turn_selection as (
+SELECT 
+    person_id,
+    person_name,
+    turn,
+    sum(weight) over (order by turn) as weight_sum
+FROM queue
+)
+
+SELECT
+person_name 
+FROM turn_selection
+where turn = (SELECT max(turn) from turn_selection where weight_sum<=1000)

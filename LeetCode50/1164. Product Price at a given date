@@ -1,0 +1,26 @@
+--1164. Product Price at a given date
+
+--Tables:
+1. products: product_id, new_price, change_date
+
+--Conditions:
+1. Write a solution to find the prices of all products on the date '2019-08-16'.
+2. Initially all the products have price 10.
+
+--Code:
+with new_prices as (
+    SELECT
+    product_id,
+    new_price as price,
+    row_number() over(partition by product_id order by change_date desc) as rnk
+FROM products
+where change_date<='2019-08-16'
+)
+SELECT 
+    p.product_id as product_id,
+    coalesce(n.price,10) as price
+FROM products p
+left join new_prices n
+ON p.product_id = n.product_id
+where rnk=1 or rnk is null
+group by 1 
