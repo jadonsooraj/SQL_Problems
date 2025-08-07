@@ -34,5 +34,5 @@ from
         cte as t1
         inner join
         cte as t2
-        on t1.x = t2.y and t2.x = t1.y and t1.r != t2.r) as tabl
 order by x;
+        on t1.x = t2.y and t2.x = t1.y and t1.r != t2.r) as tabl
