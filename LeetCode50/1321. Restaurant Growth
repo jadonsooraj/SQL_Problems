@@ -1,0 +1,27 @@
+--1321. Restaurant Growth
+
+--Table:
+1. Customer: customer_id, name, visited_on, amount
+
+--Conditions:
+1. Compute the moving average of how much the customer paid in a seven days window (i.e., current day + 6 days before). average_amount should be rounded to two decimal places.
+2. Return the result table ordered by visited_on in ascending order.
+
+--Output: visited_on, amount, average_amount
+
+--CODE:
+SELECT 
+    visited_on,
+    
+	(SELECT sum(amount) FROM customer
+     WHERE visited_on between date_sub(c.visited_on,interval 6 day) and c.visited_on) as amount,
+    
+	round((SELECT sum(amount)/7 FROM customer
+			WHERE visited_on between date_sub(c.visited_on,interval 6 day) and c.visited_on),2) as average_amount
+
+FROM customer c
+where visited_on>=(
+    SELECT date_add(min(visited_on), interval 6 day) FROM customer
+) 
+GROUP BY 1
+ORDER BY 1;

@@ -1,0 +1,30 @@
+--602. Friend Requests 2: Who has the most friends
+
+--table:
+1. RequestedAccepted: requester_id, accepter_id, accept_date
+
+--Conditions:
+1. Write a solution to find the people who have the most friends and the most friends number.
+
+--Output: id, num
+
+--CODE:
+with tab as (
+SELECT
+    requester_id as id
+FROM requestaccepted
+
+union all
+
+SELECT
+    accepter_id as id
+FROM requestaccepted
+)
+
+SELECT
+id,
+count(*) as num
+from tab
+group by 1
+order by 2 desc
+limit 1

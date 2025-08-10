@@ -1,0 +1,24 @@
+--176. Second Highest Salary
+
+--Table:
+1. Employee: id, salary
+
+--Condition:
+Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null.
+
+--Output: SecondHighestSalary
+
+--CODE:
+with tab as (
+    SELECT 
+    id,
+    salary,
+    DENSE_RANK() over (order by salary desc) as rnk
+    FROM employee
+)
+
+SELECT
+    CASE
+        WHEN (SELECT count(distinct salary) FROM employee)<2 then null 
+        ELSE (select salary from tab where rnk=2 limit 1)
+    end as SecondHighestSalary
